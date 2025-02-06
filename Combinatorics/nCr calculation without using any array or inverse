@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int n, m;
+    cin>>n>>m;
+    int N=n+m-1;
+    int R=n-1;
+    long long res=1;
+    for(int i=1;i<=R;i++){
+        res=res*(N-i+1)/i;
+    }
+    cout<<res<<"\n";
+}
